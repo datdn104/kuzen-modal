@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test kuzen modal</title>
+
+    <script>
+      var __const = window.__const || [];
+      __const["host"] = "https://datdn104.github.io/kuzen-modal";
+      var app = (function (doc, scr) {
+        var created_element = doc.createElement(scr),
+          sub_ele = doc.getElementsByTagName(scr)[0];
+        created_element.type = "text/javascript";
+        created_element.async = true;
+        created_element.setAttribute("charset", "utf-8");
+        created_element.src = __const["host"] + "/kuzen_modal.js";
+        sub_ele.parentNode.insertBefore(created_element, sub_ele);
+      })(document, "script");
+    </script>
+  </head>
+  <body>
+    <p>Test kuzen modal</p>
+  </body>
+</html>
